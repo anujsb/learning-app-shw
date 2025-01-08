@@ -51,7 +51,7 @@ const items = [
     description:
       "Personalize fields, design, and branding with real-time previews for a tailored look.",
     header: (
-      <div className="flex flex-1  w-full h-full items-center justify-center bg-[url('/edit.png')] bg-cover rounded-lg shadow-md border border-secondary"></div>
+      <div className="flex flex-1  w-full h-full items-center justify-center  bg-cover rounded-lg shadow-md border border-secondary"></div>
     ),
     icon: <p> </p>,
   },
