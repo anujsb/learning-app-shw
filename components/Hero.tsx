@@ -16,22 +16,30 @@ const Hero = () => {
           and pace.
         </p>
         {/* <p>Launching Soon</p> */}
-        <p className="mt-5 mx-20 text-neutral-500">
+        {/* <p className="mt-5 mx-20 text-neutral-500">
           Be among the first to experience the future of learning. Sign up for
           early access and exclusive updates!
-        </p>
+        </p> */}
         <div className="flex border rounded-full p-2 border-muted-foreground mt-10 mx-20">
-          <Input
+          {/* <Input
             className="border-none"
             type="email"
             placeholder="name@email.com"
           />
           <Button className="text-black rounded-full shadow-primary shadow-md">
             Get Early Access
-          </Button>
+          </Button> */}
+          <iframe
+            src="https://aiforms.21bubbles.com/aiform/121"
+            width="100%"
+            height="600px"
+            frameBorder="0"
+            className="border:0;"
+            allowFullScreen
+            title="Embedded Form"
+          ></iframe>
         </div>
       </div>
-      {/* <Video/> */}
     </div>
   );
 };
