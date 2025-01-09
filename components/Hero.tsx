@@ -91,7 +91,7 @@ const Hero = () => {
       toast.error("Failed to send message. Please try again later.");
     } finally {
       setIsSubmitting(false);
-    }
+    } 
   };
 
   return (
