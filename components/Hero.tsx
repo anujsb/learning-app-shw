@@ -102,17 +102,17 @@ const Hero = () => {
         <h1 className="text-7xl bg-clip-text text-transparent bg-gradient-to-l from-neutral-100 to-neutral-500">
           Learn Smarter with AI-Powered Assistance
         </h1>
-        <p className="mt-5 mx-20 text-neutral-500">
+        {/* <p className="mt-5 mx-20 text-neutral-500">
           Experience personalized learning through conversation, voice, and
           visual interaction. Your AI tutor adapts to your unique learning style
           and pace.
-        </p>
-        {/* <p className="text-2xl text-neutral-500 mt-5 mx-20">
+        </p> */}
+        <p className="text-xl text-neutral-500 mt-5 mx-20">
           <span className="text-white"> We get it.</span> learning shouldn’t
           feel like a grind. With
-          <span className="text-white"> Learn In Public, </span> unlock tools
+          <span className="text-white"> EduMate, </span> unlock tools
           that adapt to you, making success not just achievable but enjoyable.
-        </p> */}
+        </p>
         {/* <p>Launching Soon</p> */}
         {/* <p className="mt-5 mx-20 text-neutral-500">
           Be among the first to experience the future of learning. Sign up for
