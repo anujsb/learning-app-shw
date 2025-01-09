@@ -1,3 +1,4 @@
+
 import { Features } from "@/components/Features";
 import Hero from "@/components/Hero";
 import Text from "@/components/Text";
@@ -8,7 +9,8 @@ export default function Home() {
     <div>
       <Hero />
       {/* <Text /> */}
-      {/* <Features /> */}
+      <Features />
+
     </div>
   );
 }

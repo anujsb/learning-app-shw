@@ -17,7 +17,7 @@ export function Features() {
     <div id="features" className="w-full mx-auto px-10 mt-20">
       <div className="max-w-7xl mx-auto py-6 px-4 md:px-8 lg:px-10">
         <h2 className="text-3xl md:text-4xl mb-10 text-text  max-w-4xl">
-          Beyond just Form Editor
+          Beyond just Chatbot.
         </h2>
         <BentoGrid className="max-w-7xl mx-auto pb-10 h-fit">
           {items.map((item, i) => (
@@ -40,40 +40,40 @@ const Skeleton = () => (
 );
 const items = [
   {
-    title: "AI-Driven Form Creation",
+    title: "Voice-Interactive Assistant",
     description:
-      "Instantly generate customized forms by simply entering a prompt—no setup required.",
+      "Chat with a smart voice assistant, ask questions, and receive real-time answers tailored to your learning needs.",
     header: <p> </p>,
     icon: <p> </p>,
   },
   {
-    title: "Effortless Customization",
+    title: "Personalized Learning Hub",
     description:
-      "Personalize fields, design, and branding with real-time previews for a tailored look.",
+      "Access pre-built courses across various subjects, designed to help you learn at your own pace.",
     header: (
       <div className="flex flex-1  w-full h-full items-center justify-center  bg-cover rounded-lg shadow-md border border-secondary"></div>
     ),
     icon: <p> </p>,
   },
   {
-    title: "Instant Sharing & Embedding",
+    title: "Course-Based Assistant",
     description:
-      "Publish forms and share via link, QR code, or embed directly on your website with ease.",
-    header: <p> </p>,
+      "Dive deeper into your subjects by asking questions directly related to course content.",
+    header: <p></p>,
     icon: <p>1</p>,
   },
   {
-    title: "AI-Powered Response Summarization",
+    title: "Community Sharing",
 
     description:
-      "Quickly analyze and summarize responses with AI to identify trends and key insights.",
+      "Share your created courses with the community, explore others’ content, and collaborate in a vibrant learning ecosystem.",
     header: <p> </p>,
     icon: <p>1</p>,
   },
   {
-    title: "Centralized Response Dashboard",
+    title: "Chat History & Progress Tracker",
     description:
-      "Track responses in one place with real-time updates and organized insights.",
+      "Save your assistant chats and track your learning journey, ensuring continuous progress.",
     header: <p> </p>,
     icon: <p></p>,
   },
