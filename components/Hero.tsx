@@ -32,7 +32,6 @@ const Hero = () => {
       ...userInput,
       [name]: value,
     });
-    // Reset submitted state when user starts typing again
     if (isSubmitted) {
       setIsSubmitted(false);
     }
@@ -41,7 +40,6 @@ const Hero = () => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Reset previous states
     setIsSubmitted(false);
     setIsSubmitting(true);
 
@@ -97,30 +95,20 @@ const Hero = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center text-center mt-36 w-full px-4 md:mt-48">
+    <div className="flex flex-col items-center justify-center text-center mt-20 md:mt-36 w-full px-4">
       <div className="max-w-4xl">
-        <h1 className="text-7xl bg-clip-text text-transparent bg-gradient-to-l from-neutral-100 to-neutral-500">
+        <h1 className="text-4xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-l from-neutral-100 to-neutral-500 px-4 md:px-0">
           Learn Smarter with AI-Powered Assistance
         </h1>
-        {/* <p className="mt-5 mx-20 text-neutral-500">
-          Experience personalized learning through conversation, voice, and
-          visual interaction. Your AI tutor adapts to your unique learning style
-          and pace.
-        </p> */}
-        <p className="text-xl text-neutral-500 mt-5 mx-20">
-          <span className="text-white"> We get it.</span> learning shouldn’t
+        <p className="text-lg md:text-xl text-neutral-500 mt-4 md:mt-5 mx-4 md:mx-20">
+          <span className="text-white"> We get it.</span> learning shouldn't
           feel like a grind. With
           <span className="text-white"> EduMate, </span> unlock tools
           that adapt to you, making success not just achievable but enjoyable.
         </p>
-        {/* <p>Launching Soon</p> */}
-        {/* <p className="mt-5 mx-20 text-neutral-500">
-          Be among the first to experience the future of learning. Sign up for
-          early access and exclusive updates!
-        </p> */}
         <form
           onSubmit={handleSubmit}
-          className="flex border rounded-full p-2 border-muted-foreground mt-10 mx-20"
+          className="flex flex-col md:flex-row border rounded-2xl md:rounded-full p-2 border-muted-foreground mt-6 md:mt-10 mx-4 md:mx-20 gap-2 md:gap-0"
         >
           <Input
             name="email"
@@ -130,12 +118,12 @@ const Hero = () => {
             required
             onChange={handleChange}
             disabled={isSubmitting || isSubmitted}
-            className="border-none"
+            className="border-none mb-2 md:mb-0"
             placeholder="name@email.com"
           />
           <Button
             type="submit"
-            className="text-black rounded-full shadow-primary shadow-md"
+            className="text-black rounded-xl md:rounded-full shadow-primary shadow-md w-full md:w-auto"
             disabled={isSubmitting || isSubmitted}
           >
             {isSubmitting ? (
