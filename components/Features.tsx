@@ -11,6 +11,7 @@ import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 //   IconTableColumn,
 // } from "@tabler/icons-react";
 import Image from "next/image";
+import { AudioWaveform, BookKey, FileClock, LandPlot, Share2 } from "lucide-react";
 
 export function Features() {
   return (
@@ -43,38 +44,99 @@ const items = [
     title: "Voice-Interactive Assistant",
     description:
       "Chat with a smart voice assistant, ask questions, and receive real-time answers tailored to your learning needs.",
-    header: <p> </p>,
-    icon: <p> </p>,
+    header: (
+      <div className="flex flex-1  w-full h-full items-center justify-center  bg-cover rounded-lg  ">
+        {/* <Image
+          width={400}
+          height={300}
+          alt="Voice Assistant"
+          src="/1.jpg"
+          className="object-cover"
+        /> */}
+        <AudioWaveform className="w-12 h-12" />
+      </div>
+    ),
+    icon: <p></p>,
   },
   {
     title: "Personalized Learning Hub",
     description:
       "Access pre-built courses across various subjects, designed to help you learn at your own pace.",
     header: (
-      <div className="flex flex-1  w-full h-full items-center justify-center  bg-cover rounded-lg shadow-md border border-secondary"></div>
+      // <div className="flex flex-1  w-full h-full items-center justify-center  bg-cover rounded-lg shadow-md border border-secondary">
+      //   <Image
+      //     width={100}
+      //     height={300}
+      //     alt="Voice Assistant"
+      //     src="/1.jpg"
+      //     className="object-cover"
+      //   />
+      // </div>
+      <div className="flex flex-1  w-full h-full items-center justify-center  bg-cover rounded-lg  ">
+        <BookKey className="w-12 h-12" />
+      </div>
     ),
-    icon: <p> </p>,
+    icon:<p></p>,
   },
   {
     title: "Course-Based Assistant",
     description:
       "Dive deeper into your subjects by asking questions directly related to course content.",
-    header: <p></p>,
-    icon: <p>1</p>,
+    header: (
+      // <div className="flex flex-1  w-full h-full items-center justify-center  bg-cover rounded-lg shadow-md border border-secondary">
+      //   <Image
+      //     width={100}
+      //     height={300}
+      //     alt="Voice Assistant"
+      //     src="/1.jpg"
+      //     className="object-cover"
+      //   />
+      // </div>
+      <div className="flex flex-1  w-full h-full items-center justify-center  bg-cover rounded-lg  ">
+        <LandPlot className="w-12 h-12" />
+      </div>
+    ),
+    icon: <p></p>,
   },
   {
     title: "Community Sharing",
 
     description:
       "Share your created courses with the community, explore others’ content, and collaborate in a vibrant learning ecosystem.",
-    header: <p> </p>,
-    icon: <p>1</p>,
+    header: (
+      // <div className="flex flex-1  w-full h-full items-center justify-center  bg-cover rounded-lg shadow-md border border-secondary">
+      //   <Image
+      //     width={100}
+      //     height={300}
+      //     alt="Voice Assistant"
+      //     src="/1.jpg"
+      //     className="object-cover"
+      //   />
+      // </div>
+      <div className="flex flex-1  w-full h-full items-center justify-center  bg-cover rounded-lg  ">
+        <Share2 className="w-12 h-12" />
+      </div>
+    ),
+    icon: <p></p>,
   },
   {
     title: "Chat History & Progress Tracker",
     description:
       "Save your assistant chats and track your learning journey, ensuring continuous progress.",
-    header: <p> </p>,
+    header: (
+      // <div className="flex flex-1  w-full h-full items-center justify-center  bg-cover rounded-lg shadow-md border border-secondary">
+      //   <Image
+      //     width={100}
+      //     height={300}
+      //     alt="Voice Assistant"
+      //     src="/1.jpg"
+      //     className="object-cover"
+      //   />
+      // </div>
+      <div className="flex flex-1  w-full h-full items-center justify-center  bg-cover rounded-lg  ">
+        <FileClock className="w-12 h-12" />
+      </div>
+    ),
     icon: <p></p>,
   },
   //   {
